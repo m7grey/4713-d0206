@@ -26,14 +26,14 @@ public class TestServlet2 extends HttpServlet {
                         "<body bgcolor=\"#fdf5e6\">\n" +
                         "<h1>" + title + "</h1>\n");
 
-                        Enumeration <String> paramNames = request.getParameterNames();
+        Enumeration<String> paramNames = request.getParameterNames();
         while (paramNames.hasMoreElements()) {
             String paramName = (String) paramNames.nextElement();
-            out.println("<BR>" + paramName+ ":"+ request.getParameter(paramName));
+            out.println("<BR>" + paramName + ": " + request.getParameter(paramName));
         }
-        
+
 //                        "First Name: "+ request.getParameter("firstName")+"\n"+
 //                        "Last Name: "+ request.getParameter("lastName")+
-        out.println( "</body></html>");
+        out.println("</body></html>");
     }
 }
