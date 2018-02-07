@@ -31,9 +31,7 @@ public class TestServlet2 extends HttpServlet {
             String paramName = (String) paramNames.nextElement();
             out.println("<BR>" + paramName+ ":"+ request.getParameter(paramName));
         }
-
-
-
+        
 //                        "First Name: "+ request.getParameter("firstName")+"\n"+
 //                        "Last Name: "+ request.getParameter("lastName")+
         out.println( "</body></html>");
